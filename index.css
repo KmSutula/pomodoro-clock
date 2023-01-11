@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgb(113, 30, 0);
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30% auto;
+}
+
+h1 {
+  font-size: 60px;
+  text-shadow: 12px 2px 5px #000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(246, 232, 179, 0.774);
+  text-align: center;
+  padding: 10px 0;
+}
+.timer-container {
+  width: 100%;
+}
+.time-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#session-label,
+#break-label {
+  padding: 0 0 10px 0;
+  font-size: 25px;
+}
+#session-length,
+#break-length {
+  padding: 0 15px 0 15px;
+  font-size: 25px;
+}
+
+.length-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  width: 300px;
+  margin: 20px 0;
+}
+
+.timer-controllers {
+  display: flex;
+}
+
+#timer {
+  border: 5px solid #000;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(246, 232, 179, 0.774);
+  text-shadow: 2px 2px 5px #000;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+#timer-label {
+  margin: 0 0 10px 0;
+}
+
+#start-stop-reset {
+  font-size: 30px;
+  margin: 20px auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+i {
+  cursor: pointer;
+}
+
+i:active {
+  text-shadow: 0px 2px 10px #000;
+}
+i:hover {
+  color: rgba(246, 232, 179, 0.774);
+
+  transition: all 0.2s;
+}
+
+.tomatoes {
+  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#tomato1 {
+  top: 20%;
+  left: 14%;
+  transform: rotate(40deg);
+}
+
+#tomato2 {
+  bottom: 30%;
+  right: 14%;
+}
+
+#tomato3 {
+  bottom: -10%;
+  left: 25%;
+  transform: rotate(90deg);
+}
+
+audio {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 40px;
+  }
+  .time-control {
+    flex-direction: column;
+  }
+  #timer {
+    width: 100%;
+    font-size: 30px;
+  }
+  .tomatoes {
+    width: 50px;
+    height: 50px;
+  }
+}
